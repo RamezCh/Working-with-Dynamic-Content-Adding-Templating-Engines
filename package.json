@@ -1,20 +1,20 @@
 {
-  "name": "nodejs-complete-guide",
+  "name": "section6",
   "version": "1.0.0",
-  "description": "Complete Node.js Guide",
+  "description": "Working with dynamic content and adding templating engines",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js",
-    "start-server": "node app.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Maximilian Schwarzmüller",
+  "author": "",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^1.18.3"
+    "@types/body-parser": "^1.19.5",
+    "@types/express": "^4.17.21",
+    "nodemon": "^3.1.4"
   },
   "dependencies": {
-    "body-parser": "^1.18.3",
-    "express": "^4.16.3"
+    "body-parser": "^1.20.3",
+    "express": "^4.21.0"
   }
 }
