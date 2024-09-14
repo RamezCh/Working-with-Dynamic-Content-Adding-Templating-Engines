@@ -7,7 +7,14 @@ const expressHbs = require('express-handlebars');
 const app = express();
 
 // We used engine method because handlebars isn't built-in express
-app.engine('hbs', expressHbs()); // extension depends on what we call it here
+app.engine(
+  'hbs',
+  expressHbs({
+    layoutsDir: 'views/layouts/',
+    defaultLayout: 'main-layout',
+    extname: 'hbs',
+  })
+); // extension depends on what we call it here
 // Global configuration for the view engine
 app.set('view engine', 'hbs'); // was pug instead of handlebars
 // If your views are in a folder called views, you don't need to set the path
